@@ -20,12 +20,13 @@ a {
   text-decoration: none;
 }
 h2 {
+  margin: 10px 0;
   padding: 8px;
 }
 
 .sidebar {
   grid-row: 1 / span 2;
-  padding: 20px;
+  padding-left: 50px;
 
   background-color: pink;
   border: 1px solid black;
@@ -47,24 +48,46 @@ h2 {
 }
 
 .header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+
   background-color: lightgreen;
-  height: 15vh;
   border: 1px solid black;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+.search-bar::before {
+  position: absolute;
+
+  content: "🔍";
+  margin-left: 8px;
+}
+
+.search-bar > input {
+  flex: 1;
+}
+.header input {
+  border-radius: 10px;
+  margin: 15px 40px;
 }
 
 .main-content {
   background-color: lightgrey;
-  height: 85vh;
   border: 1px solid black;
 }
 
 #wrapper {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 250px 850px;
+  grid-template-rows: 15vh 85vh;
 
   max-width: 1100px;
   border: 1px solid black;
   margin: 20px auto;
-  height: 100vh;
 }
