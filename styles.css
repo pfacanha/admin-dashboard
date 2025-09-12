@@ -66,11 +66,16 @@ h2 {
   position: absolute;
 
   content: "🔍";
-  margin-left: 8px;
+  left: 8px;
 }
 
 .search-bar > input {
+  border: none;
   flex: 1;
+}
+
+input:focus {
+  box-shadow: 3px 3px 3px blue;
 }
 .header input {
   border-radius: 10px;
@@ -80,6 +85,23 @@ h2 {
 .main-content {
   background-color: lightgrey;
   border: 1px solid black;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  left: 20px;
+}
+
+.profile {
+  margin-left: 100px;
+  flex: 1;
 }
 
 #wrapper {
