@@ -49,7 +49,7 @@ h2 {
 
 .header {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   grid-template-rows: repeat(2, 1fr);
 
   background-color: lightgreen;
@@ -102,6 +102,22 @@ input:focus {
 
 .profile {
   margin-left: 50px;
+  flex: 1;
+}
+
+.files {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.files div {
+  border-radius: 50px;
+  background: lightblue;
+  text-align: center;
+  padding: 10px;
   flex: 1;
 }
 
