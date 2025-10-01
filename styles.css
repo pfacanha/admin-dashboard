@@ -112,11 +112,19 @@ input:focus {
   gap: 15px;
   width: 100%;
 }
+.notifications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
 
 .files div {
   border-radius: 50px;
   background: lightblue;
   text-align: center;
+  margin: 5px;
   padding: 10px;
   flex: 1;
 }
