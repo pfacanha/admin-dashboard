@@ -141,8 +141,13 @@ input:focus {
 }
 
 .gridbox {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  margin: 5px;
+  border-radius: 5px;
   text-align: center;
+}
+.project {
+  box-shadow: inset 1em 0 gold;
 }
 
 #wrapper {
