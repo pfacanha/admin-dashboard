@@ -133,30 +133,17 @@ input:focus {
   grid-template-columns: 2fr 1fr;
   grid-template-rows: repeat(2, 1fr);
 }
+.flexbox.projects {
+  grid-row: 1 / span 2;
+}
 .projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-row: 1 / span 2;
-}
-.flexbox {
-  display: flex;
-  flex-direction: column;
-}
-.title {
-  align-self: flex-start;
-}
-.announcements-box,
-.trending-box {
-  display: flex;
-  flex-direction: column;
   flex: 1;
 }
-.item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
+.project {
+  box-shadow: inset 1em 0 gold, 0px 3px 5px black;
 }
 .gridbox {
   display: flex;
@@ -166,8 +153,19 @@ input:focus {
   border-radius: 5px;
   text-align: center;
 }
-.project {
-  box-shadow: inset 1em 0 gold, 0px 3px 5px black;
+.flexbox {
+  display: flex;
+  flex-direction: column;
+}
+.announcements,
+.trendings {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  gap: 10px;
+  /* Takes up the remaining space inside the flexbox */
+  flex: 1;
 }
 
 #wrapper {
