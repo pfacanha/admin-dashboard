@@ -145,13 +145,7 @@ input:focus {
 }
 .trending,
 .announcements {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   flex: 1;
-}
-.item {
-  height: 100%;
 }
 .title {
   align-self: flex-start;
