@@ -143,12 +143,20 @@ input:focus {
   display: flex;
   flex-direction: column;
 }
-.trending,
-.announcements {
-  flex: 1;
-}
 .title {
   align-self: flex-start;
+}
+.announcements-box,
+.trending-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 .gridbox {
   display: flex;
